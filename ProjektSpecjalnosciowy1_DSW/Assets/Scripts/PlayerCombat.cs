@@ -14,8 +14,8 @@ public class PlayerCombat : MonoBehaviour
 
     private void Awake()
     {
-        _animator = GetComponent<Animator>();
-        _playerMovement = GetComponentInParent<PlayerMovement>();
+        _animator = GetComponentInChildren<Animator>();
+        _playerMovement = GetComponent<PlayerMovement>();
     }
 
     private void Update()
@@ -42,6 +42,14 @@ public class PlayerCombat : MonoBehaviour
         
             _animator.Play("PlayerAttack" + _currentAttack);
 
+            Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
+
+            foreach (Collider2D enemy in hitEnemies)
+            {
+                enemy.GetComponent<Health>().TakeDamege(1);
+                Debug.Log(enemy.name);
+            }
+        
             _timeSinceAttack = 0.0f;   
         }
     }
@@ -53,16 +61,5 @@ public class PlayerCombat : MonoBehaviour
             return;
         }
         Gizmos.DrawWireSphere(attackPoint.position, attackRange);
-    }
-
-    private void DamageEnemy()
-    {
-        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
-
-        foreach (Collider2D enemy in hitEnemies)
-        {
-            enemy.GetComponent<Health>().TakeDamege(1);
-            Debug.Log(enemy.name);
-        }
     }
 }

@@ -807,6 +807,9 @@ MonoBehaviour:
   rightEdge: {fileID: 1274084973}
   enemy: {fileID: 1768064375}
   speed: 1
+  _enemyCombat: {fileID: 0}
+  idleDuration: 1
+  animator: {fileID: 4606674770416186726}
 --- !u!4 &1724656865
 Transform:
   m_ObjectHideFlags: 0
@@ -1647,3 +1650,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7b7a4f2db64a364bb37c3d0c8e3eeb8, type: 3}
+--- !u!95 &4606674770416186726 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 4606674768984101119, guid: e7b7a4f2db64a364bb37c3d0c8e3eeb8, type: 3}
+  m_PrefabInstance: {fileID: 4606674770416186725}
+  m_PrefabAsset: {fileID: 0}

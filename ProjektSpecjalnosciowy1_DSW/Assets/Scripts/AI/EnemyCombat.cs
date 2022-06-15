@@ -6,19 +6,21 @@ public class EnemyCombat : MonoBehaviour
 {
     [SerializeField] private float attackCooldown;
     [SerializeField] private float attackRange;
-    [SerializeField] private float colliderDistance;
+    public float colliderDistance;
     [SerializeField] private int attackDamage;
     [SerializeField] private BoxCollider2D boxCollider;
     [SerializeField] private LayerMask layerMask;
     private float cooldownTimer = Mathf.Infinity;
     private Animator _animator;
     private Health _playerHealth;
+
+    private EnemyPatrol _enemyPatrol;
     
     private void Awake()
     {
         _animator = GetComponent<Animator>();
+        _enemyPatrol = transform.parent.GetComponentInParent<EnemyPatrol>();
     }
-
     private void Update()
     {
         cooldownTimer += Time.deltaTime;
@@ -30,6 +32,11 @@ public class EnemyCombat : MonoBehaviour
                 cooldownTimer = 0;
                 _animator.SetTrigger("isAttacking");
             }  
+        }
+
+        if (_enemyPatrol != null)
+        {
+            _enemyPatrol.enabled = !CanSeePlayer();
         }
     }
 

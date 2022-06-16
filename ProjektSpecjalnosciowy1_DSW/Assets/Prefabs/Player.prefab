@@ -193,6 +193,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 10
+  _components:
+  - {fileID: 5493808850818520409}
+  - {fileID: 1436305176}
 --- !u!1 &5493808851348042525
 GameObject:
   m_ObjectHideFlags: 0

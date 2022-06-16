@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4606674768950439954}
   - component: {fileID: 4606674768950439964}
   - component: {fileID: 4606674768950439965}
+  - component: {fileID: 5853744071519812549}
   m_Layer: 7
   m_Name: PatrolEnemy
   m_TagString: Untagged
@@ -73,6 +74,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 10
+  _components:
+  - {fileID: 5853744071519812549}
+  - {fileID: 4606674768984101113}
+--- !u!114 &5853744071519812549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4606674768950439955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e471addff3fe8446ac47fe520b64456, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
 --- !u!1 &4606674768984101117
 GameObject:
   m_ObjectHideFlags: 0

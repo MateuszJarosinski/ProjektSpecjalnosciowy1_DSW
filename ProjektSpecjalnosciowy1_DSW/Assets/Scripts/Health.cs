@@ -9,6 +9,8 @@ public class Health : MonoBehaviour
     private bool _isDead;
     public float CurrentHealth { get; private set; }
 
+    [SerializeField] private Behaviour[] _components;
+
     private void Awake()
     {
         _animator = GetComponentInChildren<Animator>();
@@ -28,22 +30,12 @@ public class Health : MonoBehaviour
             if (!_isDead)
             {
                 _animator.SetTrigger("die");
-                //Player
-                if (GetComponent<PlayerMovement>() != null)
-                {
-                    GetComponent<PlayerMovement>().enabled = false;   
-                }
 
-                //Enemy
-                if (GetComponentInParent<EnemyPatrol>() != null)
+                foreach (Behaviour component in _components)
                 {
-                    GetComponentInParent<EnemyPatrol>().enabled = false;   
+                    component.enabled = false;
                 }
-
-                if (GetComponentInChildren<EnemyCombat>() != null)
-                {
-                    GetComponentInChildren<EnemyCombat>().enabled = false;   
-                }
+                
                 _isDead = true;
             }
         }

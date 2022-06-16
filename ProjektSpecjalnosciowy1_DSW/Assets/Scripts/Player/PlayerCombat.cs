@@ -30,7 +30,7 @@ public class PlayerCombat : MonoBehaviour
 
     private void Attack()
     {
-        if (_timeSinceAttack > 0.6f)
+        if (_timeSinceAttack > 0.5f)
         {
             _currentAttack++;
         

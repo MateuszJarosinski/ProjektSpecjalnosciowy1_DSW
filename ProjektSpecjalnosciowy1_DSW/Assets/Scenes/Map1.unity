@@ -6984,6 +6984,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 6e4460827a2fe4f43b83b4c9c55ec1dd, type: 3}
     - target: {fileID: 3154778491553221317, guid: 618deb015a4f2b74fa423b4748d51d02, type: 3}
+      propertyPath: attackDamage
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3154778491553221317, guid: 618deb015a4f2b74fa423b4748d51d02, type: 3}
       propertyPath: colliderDistance
       value: -0.18
       objectReference: {fileID: 0}
@@ -7010,6 +7014,10 @@ PrefabInstance:
     - target: {fileID: 3154778491855333934, guid: 618deb015a4f2b74fa423b4748d51d02, type: 3}
       propertyPath: m_LocalPosition.y
       value: -1.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 6126983357552592636, guid: 618deb015a4f2b74fa423b4748d51d02, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.37
       objectReference: {fileID: 0}
     - target: {fileID: 6126983358004843598, guid: 618deb015a4f2b74fa423b4748d51d02, type: 3}
       propertyPath: m_Name

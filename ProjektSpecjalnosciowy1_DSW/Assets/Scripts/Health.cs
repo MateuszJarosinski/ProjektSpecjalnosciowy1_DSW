@@ -6,7 +6,7 @@ public class Health : MonoBehaviour
 {
     [SerializeField] private float startingHealth;
     private Animator _animator;
-    private bool _isDead;
+    public bool IsDead { get; private set; }
     public float CurrentHealth { get; private set; }
 
     [SerializeField] private Behaviour[] _components;
@@ -27,7 +27,7 @@ public class Health : MonoBehaviour
         }
         else
         {
-            if (!_isDead)
+            if (!IsDead)
             {
                 _animator.SetTrigger("die");
 
@@ -36,7 +36,7 @@ public class Health : MonoBehaviour
                     component.enabled = false;
                 }
                 
-                _isDead = true;
+                IsDead = true;
             }
         }
     }

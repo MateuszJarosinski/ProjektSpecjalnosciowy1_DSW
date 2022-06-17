@@ -6,12 +6,21 @@ using UnityEngine;
 public class EnemyDamage : MonoBehaviour
 {
     [SerializeField] protected float damage;
+    protected Health _health;
+
+    private void Awake()
+    {
+        _health = GetComponent<Health>();
+    }
 
     protected void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.CompareTag("Player"))
+        if (!_health.IsDead)
         {
-            col.GetComponent<Health>().TakeDamege(damage);
+            if (col.CompareTag("Player"))
+            {
+                col.GetComponent<Health>().TakeDamege(damage);
+            }   
         }
     }
 }

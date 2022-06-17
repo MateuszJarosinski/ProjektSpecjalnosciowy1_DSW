@@ -321,6 +321,7 @@ MonoBehaviour:
   _components:
   - {fileID: 6517550163990646670}
   - {fileID: 3023287602472298184}
+  - {fileID: 3023287602505762349}
 --- !u!114 &6517550163990646670
 MonoBehaviour:
   m_ObjectHideFlags: 0

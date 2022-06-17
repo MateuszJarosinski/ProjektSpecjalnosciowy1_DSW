@@ -65,4 +65,9 @@ public class PlayerCombat : MonoBehaviour
         
         _timeSinceAttack = 0.0f;  
     }
+
+    private void Deactivate()
+    {
+        transform.parent.gameObject.SetActive(false);
+    }
 }

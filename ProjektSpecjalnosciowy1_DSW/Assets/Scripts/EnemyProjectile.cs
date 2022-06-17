@@ -30,7 +30,10 @@ public class EnemyProjectile : EnemyDamage
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        base.OnTriggerEnter2D(collider);
+        if (collider.CompareTag("Player"))
+        {
+            collider.GetComponent<Health>().TakeDamege(damage);
+        }  
         gameObject.SetActive(false);
     }
 }

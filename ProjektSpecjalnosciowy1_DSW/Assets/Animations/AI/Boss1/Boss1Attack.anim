@@ -17,21 +17,63 @@ AnimationClip:
   m_PositionCurves: []
   m_ScaleCurves: []
   m_FloatCurves: []
-  m_PPtrCurves: []
-  m_SampleRate: 60
+  m_PPtrCurves:
+  - curve:
+    - time: 0
+      value: {fileID: 21300000, guid: 265406c4eb5581249bb0f7999d03774c, type: 3}
+    - time: 0.083333336
+      value: {fileID: 21300000, guid: 4996548b77a338642aa3c0ae23843ffd, type: 3}
+    - time: 0.16666667
+      value: {fileID: 21300000, guid: eb383fd646f7a614381e41b9bf4729dd, type: 3}
+    - time: 0.25
+      value: {fileID: 21300000, guid: 41e030cfeca85454f92849c3d2d02795, type: 3}
+    - time: 0.33333334
+      value: {fileID: 21300000, guid: a13fef80e4f845e448f126d026ac31a0, type: 3}
+    - time: 0.41666666
+      value: {fileID: 21300000, guid: 54e44dcb5a49be04b8115b401cd78d2a, type: 3}
+    - time: 0.5
+      value: {fileID: 21300000, guid: 7a29ea24a0666404881687fb159f76a9, type: 3}
+    - time: 0.5833333
+      value: {fileID: 21300000, guid: 769c1d00bdf28e2418ee4cee4fa058d7, type: 3}
+    - time: 0.6666667
+      value: {fileID: 21300000, guid: 9a0ae200e9c42ba45ab8c2505d22151c, type: 3}
+    - time: 0.75
+      value: {fileID: 21300000, guid: 055bdcfeca6db6b42909cf59de4d5cd8, type: 3}
+    attribute: m_Sprite
+    path: 
+    classID: 212
+    script: {fileID: 0}
+  m_SampleRate: 12
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0, y: 0, z: 0}
   m_ClipBindingConstant:
-    genericBindings: []
-    pptrCurveMapping: []
+    genericBindings:
+    - serializedVersion: 2
+      path: 0
+      attribute: 0
+      script: {fileID: 0}
+      typeID: 212
+      customType: 23
+      isPPtrCurve: 1
+    pptrCurveMapping:
+    - {fileID: 21300000, guid: 265406c4eb5581249bb0f7999d03774c, type: 3}
+    - {fileID: 21300000, guid: 4996548b77a338642aa3c0ae23843ffd, type: 3}
+    - {fileID: 21300000, guid: eb383fd646f7a614381e41b9bf4729dd, type: 3}
+    - {fileID: 21300000, guid: 41e030cfeca85454f92849c3d2d02795, type: 3}
+    - {fileID: 21300000, guid: a13fef80e4f845e448f126d026ac31a0, type: 3}
+    - {fileID: 21300000, guid: 54e44dcb5a49be04b8115b401cd78d2a, type: 3}
+    - {fileID: 21300000, guid: 7a29ea24a0666404881687fb159f76a9, type: 3}
+    - {fileID: 21300000, guid: 769c1d00bdf28e2418ee4cee4fa058d7, type: 3}
+    - {fileID: 21300000, guid: 9a0ae200e9c42ba45ab8c2505d22151c, type: 3}
+    - {fileID: 21300000, guid: 055bdcfeca6db6b42909cf59de4d5cd8, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 1
+    m_StopTime: 0.8333333
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -50,4 +92,18 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 0.5
+    functionName: DamagePlayer
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.5833333
+    functionName: DamagePlayer
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0

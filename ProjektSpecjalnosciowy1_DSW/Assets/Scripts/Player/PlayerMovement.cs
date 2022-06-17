@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float movementSpeed;
+    [SerializeField] private float jumpForce;
     [SerializeField] private LayerMask _groundLayer;
     private Rigidbody2D _rigidbody;
     private Animator _animator;
@@ -45,7 +46,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Jump()
     {
-        _rigidbody.velocity = new Vector2(_rigidbody.velocity.x, movementSpeed);
+        _rigidbody.velocity = new Vector2(_rigidbody.velocity.x, jumpForce);
         _animator.SetTrigger("jumped");
     }
     private bool IsGrounded()

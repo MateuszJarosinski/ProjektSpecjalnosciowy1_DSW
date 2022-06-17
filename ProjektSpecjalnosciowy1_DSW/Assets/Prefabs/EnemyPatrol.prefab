@@ -199,7 +199,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61af85987c575f74183daf9849679416, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingHealth: 10
+  startingHealth: 3
   _components:
   - {fileID: 3154778491553221317}
   - {fileID: 6126983358004843633}

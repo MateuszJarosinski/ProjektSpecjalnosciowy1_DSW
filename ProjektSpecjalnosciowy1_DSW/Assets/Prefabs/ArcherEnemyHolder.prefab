@@ -317,7 +317,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61af85987c575f74183daf9849679416, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingHealth: 10
+  startingHealth: 2
   _components:
   - {fileID: 6517550163990646670}
   - {fileID: 3023287602472298184}

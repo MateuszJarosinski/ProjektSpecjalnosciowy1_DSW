@@ -9,8 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8029514182732269657}
-  - component: {fileID: 1819485402176381090}
   - component: {fileID: 6145948557731247190}
+  - component: {fileID: 951209959027199154}
   m_Layer: 7
   m_Name: Spikes
   m_TagString: Enemy
@@ -34,19 +34,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1819485402176381090
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4150227895936131996}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e471addff3fe8446ac47fe520b64456, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 1
 --- !u!61 &6145948557731247190
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -73,6 +60,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.0319744, y: 0.3447342}
   m_EdgeRadius: 0
+--- !u!114 &951209959027199154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4150227895936131996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7939221e0b6498448958207bfd2bf4e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
 --- !u!1 &6131978149369672671
 GameObject:
   m_ObjectHideFlags: 0

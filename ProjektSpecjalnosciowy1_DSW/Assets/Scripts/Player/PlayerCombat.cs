@@ -61,7 +61,6 @@ public class PlayerCombat : MonoBehaviour
         foreach (Collider2D enemy in hitEnemies)
         {
             enemy.GetComponent<Health>().TakeDamege(1);
-            Debug.Log(enemy.name);
         }
         
         _timeSinceAttack = 0.0f;  

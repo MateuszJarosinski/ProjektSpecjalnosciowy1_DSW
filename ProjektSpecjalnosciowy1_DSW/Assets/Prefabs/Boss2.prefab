@@ -189,7 +189,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61af85987c575f74183daf9849679416, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingHealth: 3
+  startingHealth: 10
   _components:
   - {fileID: 4979522969534438146}
   - {fileID: 4311560533677884854}
@@ -325,8 +325,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40a1bfbdc1c22dd4a81023be89dea597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackCooldown: 2
-  attackRange: 2.36
+  attackCooldown: 4
+  attackRange: 1.73
   colliderDistance: 0.19
   attackDamage: 2
   boxCollider: {fileID: 4979522969366264807}

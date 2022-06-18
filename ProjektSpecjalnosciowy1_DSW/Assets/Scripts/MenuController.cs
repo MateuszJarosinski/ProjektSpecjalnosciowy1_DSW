@@ -12,6 +12,12 @@ public class MenuController : MonoBehaviour
     {
         StartCoroutine(Load("Map1"));
     }
+    
+    public void BackToMenu()
+    {
+        Time.timeScale = 1f;
+        StartCoroutine(Load("Menu"));
+    }
 
     public void EnterControls()
     {

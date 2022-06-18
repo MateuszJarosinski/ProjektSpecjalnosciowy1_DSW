@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class GameController : MonoBehaviour
 {
     [SerializeField] private GameObject pausePanel;
+    [SerializeField] private GameObject gameOverPanel;
     private bool isInPause = false;
     
     private void Update()
@@ -14,10 +15,10 @@ public class GameController : MonoBehaviour
         PauseGame();
     }
 
-    public void LoadScene(int sceneIndex)
+    public void LoadMap2()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadSceneAsync(sceneIndex);
+        SceneManager.LoadScene("Map2");
     }
 
     public void PauseGame()
@@ -43,5 +44,11 @@ public class GameController : MonoBehaviour
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene("Menu");
+    }
+
+    public void GameOver()
+    {
+        Time.timeScale = 0f;
+        gameOverPanel.SetActive(true);
     }
 }

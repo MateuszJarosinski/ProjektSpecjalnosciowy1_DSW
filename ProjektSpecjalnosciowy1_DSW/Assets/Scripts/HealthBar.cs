@@ -16,7 +16,6 @@ public class HealthBar : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(playerHealth.CurrentHealth);
         currentHealthBar.value = playerHealth.CurrentHealth;
     }
 }

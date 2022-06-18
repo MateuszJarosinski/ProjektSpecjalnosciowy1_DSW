@@ -38,7 +38,12 @@ public class Health : MonoBehaviour
 
                 if (gameObject.CompareTag("Boss"))
                 {
-                    
+                    GameObject.FindWithTag("GameController").GetComponent<GameController>().LoadMap2();
+                }
+                
+                if (gameObject.CompareTag("Player"))
+                {
+                    GameObject.FindWithTag("GameController").GetComponent<GameController>().GameOver();
                 }
                 
                 IsDead = true;

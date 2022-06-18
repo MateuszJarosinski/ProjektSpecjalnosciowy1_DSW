@@ -6,10 +6,11 @@ using UnityEngine.SceneManagement;
 public class MenuController : MonoBehaviour
 {
     [SerializeField] private GameObject controls;
+    [SerializeField] private Animator fader;
     
     public void PlayGame()
     {
-        SceneManager.LoadScene("Map1");
+        StartCoroutine(Load("Map1"));
     }
 
     public void EnterControls()
@@ -25,5 +26,11 @@ public class MenuController : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit();
+    }
+    private IEnumerator Load(string map)
+    {
+        fader.SetTrigger("start");
+        yield return new WaitForSeconds(1.5f);
+        yield return SceneManager.LoadSceneAsync(map);
     }
 }

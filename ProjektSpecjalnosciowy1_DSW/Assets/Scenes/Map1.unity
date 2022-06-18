@@ -6106,13 +6106,17 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Boss
       objectReference: {fileID: 0}
+    - target: {fileID: 383378729869220441, guid: dfa9afa0cfc04f940be186a2e6e74390, type: 3}
+      propertyPath: startingHealth
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8907385968450085896, guid: dfa9afa0cfc04f940be186a2e6e74390, type: 3}
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8907385968450085896, guid: dfa9afa0cfc04f940be186a2e6e74390, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 40.75815
+      value: 64.88
       objectReference: {fileID: 0}
     - target: {fileID: 8907385968450085896, guid: dfa9afa0cfc04f940be186a2e6e74390, type: 3}
       propertyPath: m_LocalPosition.y
@@ -25776,7 +25780,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5493808850818520415, guid: a8e407b530379b243a8d916d7a8a6f34, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -14.5
+      value: 53.1
       objectReference: {fileID: 0}
     - target: {fileID: 5493808850818520415, guid: a8e407b530379b243a8d916d7a8a6f34, type: 3}
       propertyPath: m_LocalPosition.y

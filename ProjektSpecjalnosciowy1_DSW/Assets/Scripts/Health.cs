@@ -35,6 +35,11 @@ public class Health : MonoBehaviour
                 {
                     component.enabled = false;
                 }
+
+                if (gameObject.CompareTag("Boss"))
+                {
+                    
+                }
                 
                 IsDead = true;
             }

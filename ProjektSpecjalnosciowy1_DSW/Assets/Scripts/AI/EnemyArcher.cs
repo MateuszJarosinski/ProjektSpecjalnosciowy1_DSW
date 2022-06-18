@@ -37,6 +37,7 @@ public class EnemyArcher : MonoBehaviour
             if (cooldownTimer >= attackCooldown)
             {
                 cooldownTimer = 0;
+                FindObjectOfType<AudioManager>().Play("arrow");
                 _animator.SetTrigger("isAttacking");
             }  
         }

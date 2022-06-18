@@ -256,6 +256,18 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - name: powerUp
+    clip: {fileID: 8300000, guid: a89b26f1ed03c7d4a95516c274533232, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: arrow
+    clip: {fileID: 8300000, guid: 1785fff83652f42399d9b2017b05656c, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
 --- !u!4 &494798456
 Transform:
   m_ObjectHideFlags: 0

@@ -11,6 +11,7 @@ public class HealthPowerUp : MonoBehaviour
     {
         if (col.CompareTag("Player"))
         {
+            FindObjectOfType<AudioManager>().Play("powerUp");
             col.GetComponent<Health>().AddHealth(healthValue);
             gameObject.SetActive(false);
         }

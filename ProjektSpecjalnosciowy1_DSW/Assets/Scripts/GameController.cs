@@ -38,4 +38,10 @@ public class GameController : MonoBehaviour
             }
         }
     }
+
+    public void BackToMenu()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("Menu");
+    }
 }

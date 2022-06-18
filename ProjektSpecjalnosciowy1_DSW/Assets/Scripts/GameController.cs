@@ -28,6 +28,12 @@ public class GameController : MonoBehaviour
         Time.timeScale = 1f;
         StartCoroutine(Load("Map2"));
     }
+    
+    public void LoadEndingScreen()
+    {
+        Time.timeScale = 1f;
+        StartCoroutine(Load("EndMenu"));
+    }
 
     public void PauseGame()
     {

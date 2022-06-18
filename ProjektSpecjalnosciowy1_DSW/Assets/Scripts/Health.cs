@@ -23,6 +23,7 @@ public class Health : MonoBehaviour
 
         if (CurrentHealth > 0)
         {
+            FindObjectOfType<AudioManager>().Play("takeDamage");
             _animator.SetTrigger("takeDamage");
         }
         else
@@ -36,13 +37,34 @@ public class Health : MonoBehaviour
                     component.enabled = false;
                 }
 
-                if (gameObject.CompareTag("Boss"))
+                if (gameObject.CompareTag("Monster"))
                 {
+                    FindObjectOfType<AudioManager>().Play("takeDamage");
+                    FindObjectOfType<AudioManager>().Play("monsterDie");
+                }
+
+                if (gameObject.CompareTag("Human"))
+                {
+                    FindObjectOfType<AudioManager>().Play("takeDamage");
+                    FindObjectOfType<AudioManager>().Play("maleHurt");
+                }
+                
+                if (gameObject.CompareTag("Boss1"))
+                {
+                    FindObjectOfType<AudioManager>().Play("bossDie");
                     GameObject.FindWithTag("GameController").GetComponent<GameController>().LoadMap2();
+                }
+                
+                if (gameObject.CompareTag("Boss2"))
+                {
+                    FindObjectOfType<AudioManager>().Play("bossDie");
+                    GameObject.FindWithTag("GameController").GetComponent<GameController>().LoadEndingScreen();
                 }
                 
                 if (gameObject.CompareTag("Player"))
                 {
+                    FindObjectOfType<AudioManager>().Play("takeDamage");
+                    FindObjectOfType<AudioManager>().Play("maleHurt");
                     GameObject.FindWithTag("GameController").GetComponent<GameController>().GameOver();
                 }
                 

@@ -7,6 +7,12 @@ TagManager:
   - Enemy
   - UI
   - Pause
+  - AudioManager
+  - Monster
+  - Human
+  - Undefined
+  - Boss2
+  - Boss1
   - Boss
   layers:
   - Default

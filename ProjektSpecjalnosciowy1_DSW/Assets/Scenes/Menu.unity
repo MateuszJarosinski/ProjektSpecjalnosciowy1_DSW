@@ -202,7 +202,7 @@ GameObject:
   - component: {fileID: 494798455}
   m_Layer: 0
   m_Name: AudioManager
-  m_TagString: Untagged
+  m_TagString: AudioManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -225,6 +225,36 @@ MonoBehaviour:
     volume: 0.5
     pitch: 1
     loop: 1
+    source: {fileID: 0}
+  - name: sword
+    clip: {fileID: 8300000, guid: 01999991d21504b5abb7a554bba05227, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: takeDamage
+    clip: {fileID: 8300000, guid: 90115a0fe3e8b4e098b1111cc014a9cc, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: monsterDie
+    clip: {fileID: 8300000, guid: e48a4a055f2563246abacf736e4d823a, type: 3}
+    volume: 0.7
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: maleHurt
+    clip: {fileID: 8300000, guid: 2b089411d94c27944bc445cd767ed1c3, type: 3}
+    volume: 0.8
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: bossDie
+    clip: {fileID: 8300000, guid: dc9e5e2394c5ebc408b007b0d9bd24c7, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
     source: {fileID: 0}
 --- !u!4 &494798456
 Transform:

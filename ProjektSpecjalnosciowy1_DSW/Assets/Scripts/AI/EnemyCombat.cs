@@ -30,6 +30,7 @@ public class EnemyCombat : MonoBehaviour
             if (cooldownTimer >= attackCooldown)
             {
                 cooldownTimer = 0;
+                FindObjectOfType<AudioManager>().Play("sword");
                 _animator.SetTrigger("isAttacking");
             }  
         }

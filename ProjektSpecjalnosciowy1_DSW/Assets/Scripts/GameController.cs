@@ -8,6 +8,7 @@ public class GameController : MonoBehaviour
 {
     [SerializeField] private GameObject pausePanel;
     [SerializeField] private GameObject gameOverPanel;
+    [SerializeField] private Animator fader;
     private bool isInPause = false;
     
     private void Update()
@@ -15,10 +16,17 @@ public class GameController : MonoBehaviour
         PauseGame();
     }
 
+    private IEnumerator Load(string map)
+    {
+        fader.SetTrigger("start");
+        yield return new WaitForSeconds(1.5f);
+        yield return SceneManager.LoadSceneAsync(map);
+    }
+
     public void LoadMap2()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene("Map2");
+        StartCoroutine(Load("Map2"));
     }
 
     public void PauseGame()
@@ -43,7 +51,7 @@ public class GameController : MonoBehaviour
     public void BackToMenu()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene("Menu");
+        StartCoroutine(Load("Menu"));
     }
 
     public void GameOver()

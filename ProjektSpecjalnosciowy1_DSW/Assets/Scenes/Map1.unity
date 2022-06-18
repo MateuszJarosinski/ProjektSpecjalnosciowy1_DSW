@@ -65461,7 +65461,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5493808850818520410, guid: a8e407b530379b243a8d916d7a8a6f34, type: 3}
       propertyPath: startingHealth
-      value: 30
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5493808850818520415, guid: a8e407b530379b243a8d916d7a8a6f34, type: 3}
       propertyPath: m_RootOrder

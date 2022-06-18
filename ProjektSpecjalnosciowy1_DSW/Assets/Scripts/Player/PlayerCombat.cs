@@ -40,6 +40,7 @@ public class PlayerCombat : MonoBehaviour
             if (_timeSinceAttack > 2.0f)
                 _currentAttack = 1;
         
+            FindObjectOfType<AudioManager>().Play("sword");
             _animator.Play("PlayerAttack" + _currentAttack);
         }
     }

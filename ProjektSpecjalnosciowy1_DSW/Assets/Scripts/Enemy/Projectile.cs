@@ -10,9 +10,6 @@ public class Projectile : MonoBehaviour
     private float _direction;
 
     private BoxCollider2D _collider;
-    
-    
-
     private void Awake()
     {
         _collider = GetComponent<BoxCollider2D>();
